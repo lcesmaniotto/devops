@@ -1,0 +1,2 @@
+# definir storageclass como default
+oc patch storageclass standard -p '{"metadata": {"annotations": {"storageclass.kubernetes.io/is-default-class": "true"}}}'
